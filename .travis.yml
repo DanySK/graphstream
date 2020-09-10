@@ -1,3 +1,6 @@
+# Do not double-build branches and PRs from this repo, as PRs won't get merged if they are not up to date
+if: repo != head_repo
+
 language: minimal
 env:
   global:
