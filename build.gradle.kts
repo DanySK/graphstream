@@ -10,6 +10,11 @@ plugins {
 gitSemVer {
     version = computeGitSemVer()
 }
+
+allprojects {
+    group = "org.danilopianini"
+}
+
 subprojects {
     apply(plugin = "java-library")
     apply(plugin = "maven-publish")
@@ -66,10 +71,16 @@ subprojects {
         }
     }
 
-    group = "org.danilopianini"
     publishOnCentral {
         licenseName.set("LGPL3")
         licenseUrl.set("http://www.gnu.org/copyleft/lesser.html")
         projectUrl.set("http://graphstream-project.org")
+    }
+}
+
+tasks.register("publishSubprojects") {
+    subprojects {
+        tasks.filter { it.name.contains("publish", ignoreCase = true) }
+            .forEach { this@register.dependsOn(it) }
     }
 }
