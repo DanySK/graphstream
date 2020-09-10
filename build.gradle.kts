@@ -76,6 +76,21 @@ subprojects {
         licenseUrl.set("http://www.gnu.org/copyleft/lesser.html")
         projectUrl.set("http://graphstream-project.org")
     }
+
+    publishing {
+        publications {
+            withType<MavenPublication> {
+                pom {
+                    developers {
+                        developer {
+                            name.set("The GraphStream Team")
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 tasks.register("publishSubprojects") {
