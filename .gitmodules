@@ -6,4 +6,4 @@
 	url = https://github.com/DanySK/graphstream-gs-core.git
 [submodule "graphstream-gs-algo"]
 	path = graphstream-gs-algo
-	url = git@github.com:DanySK/graphstream-gs-algo.git
+	url = https://github.com/DanySK/graphstream-gs-algo.git
