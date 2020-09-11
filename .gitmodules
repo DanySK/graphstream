@@ -1,9 +1,9 @@
 [submodule "graphstream-gs-ui-swing"]
 	path = graphstream-gs-ui-swing
-	url = git@github.com:DanySK/graphstream-gs-ui-swing.git
+	url = https://github.com/DanySK/graphstream-gs-ui-swing.git
 [submodule "graphstream-gs-core"]
 	path = graphstream-gs-core
-	url = git@github.com:DanySK/graphstream-gs-core.git
+	url = https://github.com/DanySK/graphstream-gs-core.git
 [submodule "graphstream-gs-algo"]
 	path = graphstream-gs-algo
 	url = git@github.com:DanySK/graphstream-gs-algo.git
