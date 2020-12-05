@@ -72,9 +72,9 @@ subprojects {
     }
 
     publishOnCentral {
-        licenseName.set("LGPL3")
-        licenseUrl.set("http://www.gnu.org/copyleft/lesser.html")
-        projectUrl.set("http://graphstream-project.org")
+        licenseName = "LGPL3"
+        licenseUrl = "http://www.gnu.org/copyleft/lesser.html"
+        projectUrl = "http://graphstream-project.org"
     }
 
     publishing {
