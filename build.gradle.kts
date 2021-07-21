@@ -6,11 +6,6 @@ plugins {
     id("org.danilopianini.git-sensitive-semantic-versioning")
 }
 
-
-gitSemVer {
-    version = computeGitSemVer()
-}
-
 allprojects {
     group = "org.danilopianini"
 }
